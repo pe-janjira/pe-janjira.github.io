@@ -126,29 +126,6 @@ text-decoration: none;
     font-weight: normal;
 }
 
-/* .works01 img{
-    width: 300px;
-}
-.works04 img{
-    width: 10px;
-}
-
-.works02 img{
-    width: 100px;
-}
-
-.works05 img{
-    width: 300px;
-}
-
-.works03 img{
-    width: 300px;
-}
-
-.works06 img{
-    width: 10px;
-} */
-
 #works-container{
     width: 700px;
     display: flex;
