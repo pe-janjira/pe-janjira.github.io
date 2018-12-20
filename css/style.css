@@ -94,7 +94,7 @@ text-decoration: none;
 }
 
 #about-container{
-    width: 700px;
+    width: 613px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -102,14 +102,17 @@ text-decoration: none;
 
 #profile-photo{
     width: 173px;
-    margin-left: 140px;
+    /* margin-left: 140px; */
     margin-top: 30px;
 }
 #profile-text{
-    width: 423px;
+    width: 380px;
     text-align: left;
     margin-top: 30px;
-    margin-left: 80px;
+    margin-left: 60px;
+}
+#profile-text p{
+    font-size: 14px;
 }
 
 /*Works---------------------------*/
