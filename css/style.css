@@ -130,7 +130,7 @@ text-decoration: none;
 }
 
 #works-container{
-    width: 700px;
+    width: 1121px;
     display: flex;
     justify-content: space-between;
     margin-left: auto;
@@ -139,16 +139,23 @@ text-decoration: none;
 }
 
 .works01{
-    width: 530px;
+    width: 529px;
 
 }
 .works02{
-    width: 530px;
+    width: 572px;
 }
-#works img{
-    width: 330px;
+#works01 img{
+    width: 329px;
     height: auto;
 }
+
+#works02 img{
+    width: 572px;
+    height: auto;
+}
+
+
 #works li{
     margin-bottom: 20px;
 }
