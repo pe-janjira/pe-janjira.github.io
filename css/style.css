@@ -116,7 +116,7 @@ text-decoration: none;
 #works {
     text-align: center;
     margin-top: 80px;
-    margin-bottom: 220px;
+    margin-bottom: 100px;
 
 }
 
@@ -126,7 +126,7 @@ text-decoration: none;
     font-weight: normal;
 }
 
-.works01 img{
+/* .works01 img{
     width: 300px;
 }
 .works04 img{
@@ -147,4 +147,37 @@ text-decoration: none;
 
 .works06 img{
     width: 10px;
+} */
+
+#works-container{
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.works01{
+    width: 530px;
+
+}
+.works02{
+    width: 530px;
+}
+#works img{
+    width: 330px;
+    height: auto;
+}
+#works li{
+    margin-bottom: 20px;
+}
+
+
+/* Footer------------------------ */
+footer p {
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 15px;
+    margin-bottom: 30px;
 }
