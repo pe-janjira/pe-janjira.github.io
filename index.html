@@ -12,15 +12,15 @@
 <body>
 
     <header>
-        <h1>Hello! I’m Pe, Nice to meet you :)</h1>
+        <h1 id="header-title">Hello! I’m Pe, Nice to meet you :)</h1>
     </header>
     <div id="main"></div>
 
     <nav>
-        <ul>
+        <ul id="gnav">
             <li><a href="">HOME</a></li>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">WORKS</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#works">WORKS</a></li>
             <li><a href="">CONTACT</a></li>
         </ul>
     </nav>
@@ -59,13 +59,48 @@
                 </ul>  
             </div>
         </section>
-        
-
-
-
+  
 <footer>
     <p>©copyright pejanjira.com</p>
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/shuffle-text.js"></script>
+
+<script>
+//シャッフルテキスト
+//h1タグ取得
+    var headerTitle = document.querySelector('#header-title');
+    var text = new ShuffleText(headerTitle);
+    text.start();
+
+
+    
+//HTMLを読み込んだら
+$(function(){
+
+    //リンク先を保存する変数
+ 
+    //HTMLのタグ取得
+    $('#gnav li a').on('click',function(e){
+        //HTMLのリンクを止める
+        e.preventDefault();
+
+        var targetName = $(this).attr('href');
+        console.log(targetName);
+
+        //リンク先のidの座標を変数に保存
+        var targetPos = $(targetName).offset().top;
+        console.log(targetPos);
+
+        //bodyをアニメーション
+        $('html,body').animate({scrollTop:targetPos},1000);
+    });
+});
+
+
+</script>
+
 
 
 </body>
